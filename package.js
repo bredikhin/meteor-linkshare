@@ -6,7 +6,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('METEOR@1.0');
-  api.use(['http', 'check'], 'server');
+  api.use(['http', 'check', 'mrt:moment@2.8.1'], 'server');
   Npm.depends({xml2js: "0.4.4"});
   api.addFiles(['linkshare.js'], 'server');
 
@@ -17,7 +17,7 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.versionsFrom('METEOR@1.0');
-  api.use(['tinytest', 'check'], 'server');
+  api.use(['tinytest', 'check', 'mrt:moment@2.8.1'], 'server');
   Npm.depends({xml2js: "0.4.4"});
   api.addFiles('linkshare.js', 'server');
   api.addFiles('linkshare_tests.js', 'server');
