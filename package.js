@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Rakuten Affiliate Network (Linkshare) API wrapper for Meteor",
-  version: "1.0.0",
+  version: "2.0.0",
   git: "https://github.com/bredikhin/meteor-linkshare"
 });
 
