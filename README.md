@@ -10,7 +10,11 @@ Provides product search functionality on the server.
 
 ```javascript
 var config = {
-  accessToken: 'get it on http://developers.rakutenmarketing.com/'
+  siteId: 12345,
+  username: '<your Linkshare username>',
+  password: '<your password>',
+  consumerKey: 'get it on http://developers.rakutenmarketing.com/',
+  consumerSecret: 'get it on http://developers.rakutenmarketing.com/'
 };
 var linkshare = new Linkshare(config);
 
@@ -110,10 +114,6 @@ linkshare.productSearch({keyword: 'McQueen'}, function(err, res) {
   ]
 }
 ```
-
-## TODO
-
-* Add automatic access token request / refresh functionality
 
 ## License
 
